@@ -13,7 +13,7 @@ describe("Testing", () => {
 
     it('Testing Google website, negative scenario', () => {
         cy.visit('https://www.google.com/')
-        cy.title().should('not.eq', 'Gooogle')
+        cy.title().should('not.eq', 'Google')
         cy.url().should('include', 'google.com')
     })
 })
